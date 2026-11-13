@@ -1,0 +1,55 @@
+{
+    "sites": [
+        {
+            "name": "Stihi.ru",
+            "uri_check": "https://stihi.ru/avtor/{account}",
+            "e_code": 200,
+            "e_string": "class=\"author",
+            "m_string": "Автор не найден",
+            "m_code": 200,
+            "known": [
+                "polyakov",
+                "masterkey1",
+                "eyvazova"
+            ],
+            "cat": "blog"
+        },
+        {
+            "name": "Proza.ru",
+            "uri_check": "https://www.proza.ru/avtor/{account}",
+            "e_code": 200,
+            "e_string": "class=\"author",
+            "m_string": "Автор не найден",
+            "m_code": 200,
+            "known": [
+                "sckolot",
+                "daryona67"
+            ],
+            "cat": "blog"
+        },
+        {
+            "name": "Author.Today",
+            "uri_check": "https://author.today/u/{account}",
+            "e_code": 200,
+            "e_string": "profile-name",
+            "m_string": "ga-404-page-check",
+            "m_code": 404,
+            "known": [
+                "admin"
+            ],
+            "cat": "blog"
+        },
+        {
+            "name": "LiveLib",
+            "uri_check": "https://livelib.ru/reader/{account}",
+            "e_code": 200,
+            "e_string": "livelib",
+            "m_string": "ga-404-page-check",
+            "m_code": 404,
+            "known": [
+                "vasilisa"
+            ],
+            "cat": "blog"
+        }
+    ]
+}
