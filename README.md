@@ -25,26 +25,26 @@ PikMist finds which platforms a given **username** or **email** is registered on
 
 The site database comes from [WhatsMyName](https://github.com/WebBreacher/WhatsMyName), which keeps the false-positive rate low, and is updated automatically on every launch. PikMist additionally ships its own list of Russian platforms (Stihi.ru, Proza.ru, Author.Today, LiveLib).
 
-## ✨ Features
+## Features
 
 | | |
 |---|---|
-| 🌐 **Web interface** | Search by username or email, live progress bar with spring-physics animation, result filtering, light & dark themes |
-| 🖥 **CLI** | The full engine in the terminal: file inputs, username permutation, proxies, concurrency tuning |
-| 🪪 **Digital passport** | Auto-collected profile card: full name, birth year estimate, phone numbers, avatar — shown in the UI and in the PDF |
-| 🤖 **Free AI analysis** | Built-in AI summarizes found profiles: summary, categorization, tags, risk flags and insights. No API key required |
-| 📄 **Exports** | Styled PDF report, CSV and JSON |
-| 🧩 **Custom sites** | Add your own platforms to `data/custom-sites.json` — they survive database auto-updates |
-| 🔞 **NSFW filter** | One toggle to hide adult-content sites from results |
-| 🚀 **695+ sites** | Social networks, forums, blogs, marketplaces, messengers and more |
+| **Web interface** | Search by username or email, live progress bar with spring-physics animation, result filtering, light & dark themes |
+| **CLI** | The full engine in the terminal: file inputs, username permutation, proxies, concurrency tuning |
+| **Digital passport** | Auto-collected profile card: full name, birth year estimate, phone numbers, avatar — shown in the UI and in the PDF |
+| **Free AI analysis** | Built-in AI summarizes found profiles: summary, categorization, tags, risk flags and insights. No API key required |
+| **Exports** | Styled PDF report, CSV and JSON |
+| **Custom sites** | Add your own platforms to `data/custom-sites.json` — they survive database auto-updates |
+| **NSFW filter** | One toggle to hide adult-content sites from results |
+| **695+ sites** | Social networks, forums, blogs, marketplaces, messengers and more |
 
-## 📸 Screenshot
+## Screenshot
 
 <div align="center">
   <img src="docs/screenshot-main.png" alt="PikMist web interface" width="900">
 </div>
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Web interface
 
@@ -72,7 +72,7 @@ docker build -t pikmist .
 docker run --rm pikmist --username johndoe --pdf
 ```
 
-## ⚙️ CLI Options
+## CLI Options
 
 | Flag | Description |
 |---|---|
@@ -90,11 +90,11 @@ docker run --rm pikmist --username johndoe --pdf
 | `--verbose` | Detailed logging |
 | `--no-update` | Skip database update on launch |
 
-## 🪪 Digital Passport
+## Digital Passport
 
 When accounts are found, PikMist collects available metadata into a compact profile card — full name (Instagram → Twitter → TikTok → Gravatar → Duolingo priority), estimated birth year, phone numbers and the avatar. Enable the **AI analysis** chip in the web UI to see it alongside AI insights; in PDF reports the passport is always included.
 
-## 🤖 AI Analysis (free)
+## AI Analysis (free)
 
 ```bash
 python pikmist.py --setup-ai
@@ -102,11 +102,11 @@ python pikmist.py --setup-ai
 
 Found site names are sent for analysis; nothing else is transmitted. There is a daily request quota. In the web interface just turn on the **AI analysis** chip.
 
-## 🧩 Adding Custom Sites
+## Adding Custom Sites
 
 Append entries to `data/custom-sites.json` following the [WhatsMyName schema](https://github.com/WebBreacher/WhatsMyName/blob/main/OPERATIONS.md). Custom entries are merged into the live database on every run and are never overwritten by auto-updates.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 app.py             Web server (Flask) and engine integration
@@ -118,7 +118,7 @@ tests/             Unit tests
 results/           Saved reports
 ```
 
-## ⚠️ Disclaimer
+## Disclaimer
 
 ```
 This program is for Educational purposes ONLY. Do not use it without permission.
@@ -126,7 +126,7 @@ By using this program you accept that any damage caused by its use is not
 the responsibility of the authors.
 ```
 
-## 🙏 Credits
+## Credits
 
 - Engine based on [Blackbird](https://github.com/p1ngul1n0/blackbird) by p1ngul1n0 (Lucas Antoniaci)
 - Site database: [WhatsMyName](https://github.com/WebBreacher/WhatsMyName) — CC BY-SA 4.0
